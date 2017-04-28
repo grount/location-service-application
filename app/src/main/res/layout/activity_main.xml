@@ -75,11 +75,11 @@
         android:layout_toLeftOf="@+id/latLongCurrentLocationRefreshImageButton"
         android:layout_toRightOf="@+id/searchesTextView"
         android:layout_toStartOf="@+id/latLongCurrentLocationRefreshImageButton"
-        android:inputType="textMultiLine"
         android:scrollHorizontally="false"
         android:width="300dp"
         android:height="150dp"
-        android:background="@drawable/border_style" />
+        android:background="@drawable/border_style"
+        android:maxLines="5" />
 
     <ImageButton
         android:id="@+id/currentLocationRefreshImageButton"
