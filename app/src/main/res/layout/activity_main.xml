@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gront.daniel.locationserviceapplication.MainActivity">
+
+    <ImageButton
+        android:id="@+id/latLongCurrentLocationRefreshImageButton"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:adjustViewBounds="false"
+        android:background="?android:selectableItemBackground"
+        android:cropToPadding="false"
+        android:layout_marginLeft="5dp"
+        app:srcCompat="@android:drawable/ic_popup_sync"
+        android:layout_alignBottom="@+id/latLongCurrentLocationTextView"
+        android:layout_toRightOf="@+id/latLongCurrentLocationTextView"
+        android:layout_toEndOf="@+id/latLongCurrentLocationTextView" />
+
+    <TextView
+        android:id="@+id/latInputTextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/latTextView"
+        android:layout_alignBottom="@+id/latTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/latTextView"
+        android:layout_toRightOf="@+id/latTextView"
+        android:background="@drawable/border_style" />
+
+    <TextView
+        android:id="@+id/currentLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="26dp"
+        android:text="My current location:"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/currentLocationInputTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:width="300dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/currentLocationTextView"
+        android:layout_alignLeft="@+id/currentLocationTextView"
+        android:layout_alignStart="@+id/currentLocationTextView" />
+
+    <TextView
+        android:id="@+id/latLongCurrentLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/longInputTextView"
+        android:layout_alignRight="@+id/longInputTextView"
+        android:layout_below="@+id/latInputTextView"
+        android:layout_marginTop="20dp"
+        android:width="300dp"
+        android:background="@drawable/border_style" />
+
+    <TextView
+        android:id="@+id/searchesInputTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchesTextView"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/latLongCurrentLocationRefreshImageButton"
+        android:layout_toRightOf="@+id/searchesTextView"
+        android:layout_toStartOf="@+id/latLongCurrentLocationRefreshImageButton"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:width="300dp"
+        android:height="150dp"
+        android:background="@drawable/border_style" />
+
+    <ImageButton
+        android:id="@+id/currentLocationRefreshImageButton"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:adjustViewBounds="false"
+        android:background="?android:selectableItemBackground"
+        android:cropToPadding="false"
+        android:layout_marginLeft="5dp"
+        app:srcCompat="@android:drawable/ic_popup_sync"
+        android:layout_alignBottom="@+id/currentLocationInputTextView"
+        android:layout_toRightOf="@+id/currentLocationInputTextView"
+        android:layout_toEndOf="@+id/currentLocationInputTextView" />
+
+    <TextView
+        android:id="@+id/showLocationLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currentLocationInputTextView"
+        android:layout_alignStart="@+id/currentLocationInputTextView"
+        android:layout_below="@+id/currentLocationInputTextView"
+        android:layout_marginTop="36dp"
+        android:text="Show location by latitude and longitude:"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/latTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/showLocationLabelTextView"
+        android:layout_alignStart="@+id/showLocationLabelTextView"
+        android:layout_below="@+id/showLocationLabelTextView"
+        android:layout_marginTop="20dp"
+        android:text="Lat:"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/longInputTextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/longTextView"
+        android:layout_alignBottom="@+id/longTextView"
+        android:layout_toLeftOf="@+id/currentLocationRefreshImageButton"
+        android:layout_toStartOf="@+id/currentLocationRefreshImageButton"
+        android:background="@drawable/border_style" />
+
+    <TextView
+        android:id="@+id/longTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long:"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/latInputTextView"
+        android:layout_alignBottom="@+id/latInputTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/searchesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/latLongCurrentLocationTextView"
+        android:layout_alignStart="@+id/latLongCurrentLocationTextView"
+        android:layout_below="@+id/latLongCurrentLocationTextView"
+        android:layout_marginTop="39dp"
+        android:textColor="@android:color/black"/>
+
+
+</RelativeLayout>

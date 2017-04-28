@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Location Service Application</string>
+    <string name="numberOfSearches">5</string>
+</resources>
