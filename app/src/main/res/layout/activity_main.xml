@@ -10,14 +10,13 @@
         android:id="@+id/latLongCurrentLocationRefreshImageButton"
         android:layout_width="30dip"
         android:layout_height="30dip"
-        android:layout_alignBottom="@+id/latLongCurrentLocationTextView"
-        android:layout_marginStart="5dp"
-        android:layout_toEndOf="@+id/latLongCurrentLocationTextView"
-        android:layout_toRightOf="@+id/latLongCurrentLocationTextView"
         android:adjustViewBounds="false"
         android:background="?android:selectableItemBackground"
         android:cropToPadding="false"
-        app:srcCompat="@android:drawable/ic_popup_sync" />
+        app:srcCompat="@android:drawable/ic_popup_sync"
+        android:layout_alignBottom="@+id/latLongCurrentLocationTextView"
+        android:layout_toRightOf="@+id/latLongCurrentLocationTextView"
+        android:layout_toEndOf="@+id/latLongCurrentLocationTextView" />
 
     <TextView
         android:id="@+id/latInputTextView"
