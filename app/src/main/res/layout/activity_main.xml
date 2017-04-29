@@ -10,14 +10,14 @@
         android:id="@+id/latLongCurrentLocationRefreshImageButton"
         android:layout_width="30dip"
         android:layout_height="30dip"
+        android:layout_alignBottom="@+id/latLongCurrentLocationTextView"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/latLongCurrentLocationTextView"
+        android:layout_toRightOf="@+id/latLongCurrentLocationTextView"
         android:adjustViewBounds="false"
         android:background="?android:selectableItemBackground"
         android:cropToPadding="false"
-        android:layout_marginLeft="5dp"
-        app:srcCompat="@android:drawable/ic_popup_sync"
-        android:layout_alignBottom="@+id/latLongCurrentLocationTextView"
-        android:layout_toRightOf="@+id/latLongCurrentLocationTextView"
-        android:layout_toEndOf="@+id/latLongCurrentLocationTextView" />
+        app:srcCompat="@android:drawable/ic_popup_sync" />
 
     <TextView
         android:id="@+id/latInputTextView"
@@ -35,14 +35,14 @@
         android:id="@+id/currentLocationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
         android:text="My current location:"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/currentLocationInputTextView"
@@ -53,7 +53,9 @@
         android:background="@drawable/border_style"
         android:layout_below="@+id/currentLocationTextView"
         android:layout_alignLeft="@+id/currentLocationTextView"
-        android:layout_alignStart="@+id/currentLocationTextView" />
+        android:layout_alignStart="@+id/currentLocationTextView"
+        android:layout_toLeftOf="@+id/currentLocationRefreshImageButton"
+        android:layout_toStartOf="@+id/currentLocationRefreshImageButton" />
 
     <TextView
         android:id="@+id/latLongCurrentLocationTextView"
@@ -64,22 +66,25 @@
         android:layout_below="@+id/latInputTextView"
         android:layout_marginTop="20dp"
         android:width="300dp"
-        android:background="@drawable/border_style" />
+        android:background="@drawable/border_style"
+        android:layout_alignLeft="@+id/latTextView"
+        android:layout_alignStart="@+id/latTextView" />
 
     <TextView
         android:id="@+id/searchesInputTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/searchesTextView"
-        android:layout_marginTop="16dp"
-        android:layout_toLeftOf="@+id/latLongCurrentLocationRefreshImageButton"
-        android:layout_toRightOf="@+id/searchesTextView"
-        android:layout_toStartOf="@+id/latLongCurrentLocationRefreshImageButton"
         android:scrollHorizontally="false"
         android:width="300dp"
-        android:height="150dp"
+        android:height="250dp"
         android:background="@drawable/border_style"
-        android:maxLines="5" />
+        android:maxLines="5"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/searchesTextView"
+        android:layout_alignLeft="@+id/searchesTextView"
+        android:layout_alignStart="@+id/searchesTextView"
+        android:layout_toLeftOf="@+id/latLongCurrentLocationRefreshImageButton"
+        android:layout_toStartOf="@+id/latLongCurrentLocationRefreshImageButton" />
 
     <ImageButton
         android:id="@+id/currentLocationRefreshImageButton"
@@ -88,22 +93,23 @@
         android:adjustViewBounds="false"
         android:background="?android:selectableItemBackground"
         android:cropToPadding="false"
-        android:layout_marginLeft="5dp"
         app:srcCompat="@android:drawable/ic_popup_sync"
         android:layout_alignBottom="@+id/currentLocationInputTextView"
-        android:layout_toRightOf="@+id/currentLocationInputTextView"
-        android:layout_toEndOf="@+id/currentLocationInputTextView" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
 
     <TextView
         android:id="@+id/showLocationLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/currentLocationInputTextView"
-        android:layout_alignStart="@+id/currentLocationInputTextView"
-        android:layout_below="@+id/currentLocationInputTextView"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="13dp"
         android:text="Show location by latitude and longitude:"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/currentLocationInputTextView"
+        android:layout_alignLeft="@+id/currentLocationInputTextView"
+        android:layout_alignStart="@+id/currentLocationInputTextView" />
 
     <TextView
         android:id="@+id/latTextView"
@@ -143,8 +149,8 @@
         android:layout_alignLeft="@+id/latLongCurrentLocationTextView"
         android:layout_alignStart="@+id/latLongCurrentLocationTextView"
         android:layout_below="@+id/latLongCurrentLocationTextView"
-        android:layout_marginTop="39dp"
-        android:textColor="@android:color/black"/>
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/black" />
 
 
 </RelativeLayout>
